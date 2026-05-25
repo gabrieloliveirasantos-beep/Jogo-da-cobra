@@ -9,7 +9,18 @@
 
     <h1>Snake Game</h1>
 
+    <div id="controles">
+      <button onclick="iniciarJogo(150)">Fácil</button>
+      <button onclick="iniciarJogo(100)">Médio</button>
+      <button onclick="iniciarJogo(60)">Difícil</button>
+    </div>
+
     <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div id="reiniciar" style="display:none">
+      <p id="mensagemFinal"></p>
+      <button onclick="voltarMenu()">Jogar novamente</button>
+    </div>
 
     <script src="game.js"></script>
   </body>
